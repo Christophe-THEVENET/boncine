@@ -1,16 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans&family=Rammetto+One&family=Skranji&display=swap');
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
 
+html {
+  font-size: 62.5%;
 }
 
 body {
   background-color: rgb(21, 23, 27);
-  color: antiquewhite;
+  color: rgb(255, 255, 255);
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
 }
+
+header {
+  background-color: rgb(20, 48, 48);
+
+}
+
 
 .slogan {
   color: aquamarine;
-  background-color: rgb(20, 48, 48);
+  padding: 2rem;
+  width: 80%;
+  margin: 2rem auto;
+  font-size: 2rem;
+
+}
+
+h1 {
+  font-size: 4rem;
+  padding: 2rem;
+}
+
+.logo {
+  width: 20vw;
+  margin-bottom: 5rem;
+  border-radius: 1rem;
+}
+
+.btn {
+  background-color: rgb(28, 94, 72);
+  color: rgb(255, 255, 255);
+  border-radius: 6px;
+  padding: 1rem 0.7rem;
+  text-decoration: none;
 }
