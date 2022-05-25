@@ -1,52 +1,91 @@
 @import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans&family=Rammetto+One&family=Skranji&display=swap');
 
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* border: 1px solid red; */
 }
 
 html {
-  font-size: 62.5%;
+    font-size: 62.5%;
 }
 
 body {
-  background-color: rgb(21, 23, 27);
-  color: rgb(255, 255, 255);
-  font-family: 'Poppins', sans-serif;
-  text-align: center;
+    background-color: rgb(21, 23, 27);
+    color: rgb(255, 255, 255);
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    min-height: 100vh;
 }
+
+/*============== HEADER =================*/
 
 header {
-  background-color: rgb(20, 48, 48);
-
+    background-color: rgb(24, 44, 36);
+    min-height: 6vh;
+    display: flex;
+    align-items: center;
+    margin-bottom: 4rem;
+    box-shadow: 4px 4px 7px 1px black;
 }
 
-
-.slogan {
-  color: aquamarine;
-  padding: 2rem;
-  width: 80%;
-  margin: 2rem auto;
-  font-size: 2rem;
-
+.header__title {
+    flex: 1;
 }
 
 h1 {
-  font-size: 4rem;
-  padding: 2rem;
+    font-size: 4.5rem;
+    padding: 0.8rem;
 }
 
-.logo {
-  width: 20vw;
-  margin-bottom: 5rem;
-  border-radius: 1rem;
+/*  ======= personalise le btn hambuger ========= */
+.custom-toggler .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(66, 173, 138, 0.993)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
 }
 
-.btn {
-  background-color: rgb(28, 94, 72);
-  color: rgb(255, 255, 255);
-  border-radius: 6px;
-  padding: 1rem 0.7rem;
-  text-decoration: none;
+.navbar-toggler-icon {
+  width: 3rem;
+}
+
+.custom-toggler.navbar-toggler:focus {
+    box-shadow: none;
+}
+
+.header__nav {
+    flex: 10;
+}
+
+.navbar-nav .nav-item .nav-link {
+    color: rgba(66, 173, 138, 0.993);
+    font-size: 1.6rem;
+    text-decoration: underline 0.15em rgba(66, 173, 138, 0);
+    text-underline-offset: 0.5em;
+    margin-right: 1rem;
+    transition: text-decoration-color 500ms;
+}
+
+.navbar-nav .nav-item .nav-link:hover {
+    text-decoration: underline 0.15em rgba(66, 173, 138, 1);
+}
+
+/*  ============= BANNIERE ================ */
+
+.slogan {
+    color: rgba(66, 173, 138, 0.993);
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+}
+
+/*  ============= MEDIA QUERY================ */
+@media screen and (max-width: 991px) {
+    /* effet barre sous nav */
+    .navbar-nav .nav-item .nav-link {
+        text-decoration: underline 0.15em rgba(66, 173, 138, 0);
+        text-underline-offset: -1.5em;
+    }
+
+    .navbar-nav .nav-item .nav-link:hover {
+        text-decoration: underline 0.15em rgba(66, 173, 138, 1);
+    }
 }
