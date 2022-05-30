@@ -28,10 +28,10 @@
 
 /* ============== FORMULAIRE ==================== */
 
-.label_placeholder {
+.form-floating {
     color: $white;
     font-weight: bold;
-    font-size: 1.5rem;
+    font-size: 1.5vmin;
 }
 
 .form-control {
@@ -45,4 +45,20 @@
     border: 1px solid darken($white, 50%);
 }
 
+.form-floating > .form-control:not(:placeholder-shown) {
+    color: $white;
+    font-weight: bold;
+    font-size: 1.5vmin;
+}
 
+.btnPublish {
+    background-color: $white;
+    color: $purpleBackground;
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+.form {
+    width: 100%;
+    max-width: 60rem;
+}

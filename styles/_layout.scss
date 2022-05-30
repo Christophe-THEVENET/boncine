@@ -1,10 +1,8 @@
-
-
 /*============== HEADER =================*/
 
 header {
     background-color: $purpleBackground;
-    min-height: 6vh;
+    min-height: 10vh;
     display: flex;
     align-items: center;
     z-index: 10;
@@ -17,7 +15,7 @@ header {
 }
 
 h1 {
-    font-size: 4.5rem;
+    font-size: 4.5vmin;
     margin-left: 2rem;
     padding: 0.8rem;
 }
@@ -52,3 +50,26 @@ h1 {
 .navbar-nav .nav-item .nav-link:hover {
     text-decoration: underline 0.15em rgba(201, 173, 167, 1);
 }
+
+/* ....... titre publier ......... */
+
+.publishTitle {
+    margin: 8rem auto 3rem;
+}
+
+/* ============== MEDIA QUERY ============= */
+
+@media screen and (max-width: 991px) {
+    .navbar-collapse {
+        position: absolute;
+        top: 6rem;
+        width: 15rem;
+        background-color: $purpleBackground;
+        padding: 0.3rem;
+    }
+
+    .navbar-nav .nav-item .nav-link {
+        margin: 0;
+        padding: 0.5rem;
+    }
+} ;

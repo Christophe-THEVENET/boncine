@@ -11,7 +11,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    /* border: 1px solid red; */
+   /*  border: 1px solid red;  */
 }
 
 html {
@@ -24,17 +24,4 @@ body {
     font-family: 'Poppins', sans-serif;
     text-align: center;
     min-height: 100vh;
-}
-
-/*  ============= MEDIA QUERY================ */
-
-@media screen and (max-width: 991px) {
-    /* effet barre sous nav */
-    .navbar-nav .nav-item .nav-link {
-        text-decoration: underline 0.15em rgba(201, 173, 167, 0);
-        text-underline-offset: -1.5em;
-    }
-    .navbar-nav .nav-item .nav-link:hover {
-        text-decoration: underline 0.15em rgba(201, 173, 167, 1);
-    }
 }
