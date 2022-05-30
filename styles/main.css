@@ -1,141 +1,131 @@
-@import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans&family=Rammetto+One&family=Skranji&display=swap');
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    /* border: 1px solid red; */
+@import url("https://fonts.googleapis.com/css2?family=Balsamiq+Sans&family=Rammetto+One&family=Skranji&display=swap");
+/*  ============= BANNIERE ================ */
+.banniere {
+  background-image: url("../img/banniere.jpg");
+  background-position: center;
+  background-size: cover;
+  height: 30vw;
+  max-height: 50rem;
+  z-index: -50;
+  position: relative;
 }
 
-html {
-    font-size: 62.5%;
+.slogan {
+  color: #111016;
+  font-size: 1.7vmin;
+  font-weight: bold;
+  position: absolute;
+  top: 13%;
+  left: 51%;
+  transform: translate(-51%, -13%);
 }
 
-body {
-    background-color: #111016;
-    color: rgb(255, 255, 255);
-    font-family: 'Poppins', sans-serif;
-    text-align: center;
-    min-height: 100vh;
+/*  ============= CARTE ================ */
+.card {
+  background-color: rgb(54, 45, 59);
+}
+
+/* ============== FORMULAIRE ==================== */
+.label_placeholder {
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.form-control {
+  background-color: rgb(54, 45, 59);
+  border: none;
+}
+
+.form-control:focus {
+  background-color: #6b5975;
+  box-shadow: none;
+  border: 1px solid gray;
 }
 
 /*============== HEADER =================*/
-
 header {
-    background-color: rgb(11, 9, 19);
-    min-height: 6vh;
-    display: flex;
-    align-items: center;
-    z-index: 10;
-    box-shadow: 4px 4px 7px 1px black;
+  background-color: #111016;
+  min-height: 6vh;
+  display: flex;
+  align-items: center;
+  z-index: 10;
+  box-shadow: 4px 4px 7px 1px black;
 }
 
 .header__title {
-    flex: 1;
+  flex: 1;
+  color: #ffffff;
 }
 
 h1 {
-    font-size: 4.5rem;
-    margin-left: 2rem;
-    padding: 0.8rem;
+  font-size: 4.5rem;
+  margin-left: 2rem;
+  padding: 0.8rem;
 }
 
 /*  ======= personalise le btn hambuger ========= */
 .custom-toggler .navbar-toggler-icon {
-    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgb(201, 173, 167)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgb(201, 173, 167)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
 }
 
 .navbar-toggler-icon {
-    width: 3rem;
+  width: 3rem;
 }
 
 .custom-toggler.navbar-toggler:focus {
-    box-shadow: none;
+  box-shadow: none;
 }
 
 .header__nav {
-    flex: 10;
-    margin-right: 3rem;
+  flex: 10;
+  margin-right: 3rem;
 }
 
 .navbar-nav .nav-item .nav-link {
-    color: rgb(201, 173, 167);
-    font-size: 1.6rem;
-    text-decoration: underline 0.15em rgba(201, 173, 167, 0);
-    text-underline-offset: 0.5em;
-    margin-right: 1rem;
-    transition: text-decoration-color 500ms;
+  color: rgb(201, 173, 167);
+  font-size: 1.6rem;
+  text-decoration: underline 0.15em rgba(201, 173, 167, 0);
+  text-underline-offset: 0.5em;
+  margin-right: 1rem;
+  transition: text-decoration-color 500ms;
 }
 
 .navbar-nav .nav-item .nav-link:hover {
-    text-decoration: underline 0.15em rgba(201, 173, 167, 1);
+  text-decoration: underline 0.15em rgb(201, 173, 167);
 }
 
-/*  ============= BANNIERE ================ */
-
-.banniere {
-    background-image: url('../img/banniere.jpg');
-    background-position: center;
-    background-size: cover;
-    height: 30vw;
-    max-height: 50rem;
-    z-index: -50;
-    position: relative;
+/* "sass": "sass --watch ./styles/:./styles/" */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* border: 1px solid red; */
 }
 
-.slogan {
-    color: rgb(11, 9, 19);
-    font-size: 1.7vmin;
-    font-weight: bold;
-    position: absolute;
-    top: 13%;
-    left: 51%;
-    transform: translate(-51%, -13%);
+html {
+  font-size: 62.5%;
 }
 
-.active {
-    background-color: aqua;
-}
-
-/*  ============= CARTE ================ */
-
-.card {
-    background-color: aqua;
-}
-
-/* ============== CREATE ==================== */
-
-.label_placeholder {
-    color: rgb(255, 255, 255);
-    font-weight: bold;
-    font-size: 1.5rem;
-}
-
-.form-control {
-    background-color: rgba(66, 173, 138, 1);
-    border: none;
-}
-
-.form-control:focus {
-    background-color: rgba(66, 173, 138, 1);
-
-    box-shadow: none;
-    border: 4px solid rgba(66, 173, 138, 1);
-}
-
-.textarea_placeholder {
-    color: #000;
+body {
+  background-color: #111016;
+  color: rgb(201, 173, 167);
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+  min-height: 100vh;
 }
 
 /*  ============= MEDIA QUERY================ */
-
 @media screen and (max-width: 991px) {
-    /* effet barre sous nav */
-    .navbar-nav .nav-item .nav-link {
-        text-decoration: underline 0.15em rgba(66, 173, 138, 0);
-        text-underline-offset: -1.5em;
-    }
-    .navbar-nav .nav-item .nav-link:hover {
-        text-decoration: underline 0.15em rgba(66, 173, 138, 1);
-    }
+  /* effet barre sous nav */
+  .navbar-nav .nav-item .nav-link {
+    text-decoration: underline 0.15em rgba(201, 173, 167, 0);
+    text-underline-offset: -1.5em;
+  }
+
+  .navbar-nav .nav-item .nav-link:hover {
+    text-decoration: underline 0.15em rgb(201, 173, 167);
+  }
 }
+
+/*# sourceMappingURL=main.css.map */

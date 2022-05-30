@@ -1,0 +1,48 @@
+/*  ============= BANNIERE ================ */
+
+.banniere {
+    background-image: url('../img/banniere.jpg');
+    background-position: center;
+    background-size: cover;
+    height: 30vw;
+    max-height: 50rem;
+    z-index: -50;
+    position: relative;
+}
+
+.slogan {
+    color: $purpleBackground;
+    font-size: 1.7vmin;
+    font-weight: bold;
+    position: absolute;
+    top: 13%;
+    left: 51%;
+    transform: translate(-51%, -13%);
+}
+
+/*  ============= CARTE ================ */
+
+.card {
+    background-color: $purpleCard;
+}
+
+/* ============== FORMULAIRE ==================== */
+
+.label_placeholder {
+    color: $white;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.form-control {
+    background-color: $purpleCard;
+    border: none;
+}
+
+.form-control:focus {
+    background-color: lighten($purpleCard, 20%);
+    box-shadow: none;
+    border: 1px solid darken($white, 50%);
+}
+
+
