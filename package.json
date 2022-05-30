@@ -1,0 +1,19 @@
+{
+  "name": "allocine.com",
+  "version": "1.0.0",
+  "description": "petit site crud films",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./styles/:./styles/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Christophe-THEVENET/boncine.git"
+  },
+  "author": "Christophe THEVENET",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Christophe-THEVENET/boncine/issues"
+  },
+  "homepage": "https://github.com/Christophe-THEVENET/boncine#readme"
+}
