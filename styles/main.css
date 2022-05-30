@@ -12,7 +12,7 @@ html {
 }
 
 body {
-    background-color: rgb(21, 23, 27);
+    background-color: #111016;
     color: rgb(255, 255, 255);
     font-family: 'Poppins', sans-serif;
     text-align: center;
@@ -22,7 +22,7 @@ body {
 /*============== HEADER =================*/
 
 header {
-    background-color: rgb(24, 44, 36);
+    background-color: rgb(11, 9, 19);
     min-height: 6vh;
     display: flex;
     align-items: center;
@@ -42,7 +42,7 @@ h1 {
 
 /*  ======= personalise le btn hambuger ========= */
 .custom-toggler .navbar-toggler-icon {
-    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(66, 173, 138, 0.993)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgb(201, 173, 167)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
 }
 
 .navbar-toggler-icon {
@@ -59,16 +59,16 @@ h1 {
 }
 
 .navbar-nav .nav-item .nav-link {
-    color: rgba(66, 173, 138, 0.993);
+    color: rgb(201, 173, 167);
     font-size: 1.6rem;
-    text-decoration: underline 0.15em rgba(66, 173, 138, 0);
+    text-decoration: underline 0.15em rgba(201, 173, 167, 0);
     text-underline-offset: 0.5em;
     margin-right: 1rem;
     transition: text-decoration-color 500ms;
 }
 
 .navbar-nav .nav-item .nav-link:hover {
-    text-decoration: underline 0.15em rgba(66, 173, 138, 1);
+    text-decoration: underline 0.15em rgba(201, 173, 167, 1);
 }
 
 /*  ============= BANNIERE ================ */
@@ -84,7 +84,7 @@ h1 {
 }
 
 .slogan {
-    color: rgb(26, 94, 71);
+    color: rgb(11, 9, 19);
     font-size: 1.7vmin;
     font-weight: bold;
     position: absolute;
@@ -93,10 +93,21 @@ h1 {
     transform: translate(-51%, -13%);
 }
 
+.active {
+    background-color: aqua;
+}
+
+/*  ============= CARTE ================ */
+
+.card {
+    background-color: aqua;
+}
+
 /* ============== CREATE ==================== */
 
 .label_placeholder {
     color: rgb(255, 255, 255);
+    font-weight: bold;
     font-size: 1.5rem;
 }
 
