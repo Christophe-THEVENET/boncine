@@ -26,6 +26,11 @@
 }
 
 /* ============== FORMULAIRE ==================== */
+.form {
+  width: 100%;
+  max-width: 60rem;
+}
+
 .form-floating {
   color: #ffffff;
   font-weight: bold;
@@ -54,11 +59,7 @@
   color: #111016;
   font-size: 1.1rem;
   font-weight: bold;
-}
-
-.form {
-  width: 100%;
-  max-width: 60rem;
+  margin-left: 70%;
 }
 
 /*============== HEADER =================*/
@@ -115,7 +116,7 @@ h1 {
 
 /* ....... titre publier ......... */
 .publishTitle {
-  margin: 8rem auto 3rem;
+  margin: 10rem auto 5rem;
 }
 
 /* ============== MEDIA QUERY ============= */
@@ -138,7 +139,7 @@ h1 {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  /*  border: 1px solid red;  */
+  /* border: 1px solid red;  */
 }
 
 html {

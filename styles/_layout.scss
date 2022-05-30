@@ -54,12 +54,13 @@ h1 {
 /* ....... titre publier ......... */
 
 .publishTitle {
-    margin: 8rem auto 3rem;
+    margin: 10rem auto 5rem;
 }
 
 /* ============== MEDIA QUERY ============= */
 
 @media screen and (max-width: 991px) {
+    
     .navbar-collapse {
         position: absolute;
         top: 6rem;

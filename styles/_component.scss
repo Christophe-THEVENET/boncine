@@ -28,6 +28,11 @@
 
 /* ============== FORMULAIRE ==================== */
 
+.form {
+    width: 100%;
+    max-width: 60rem;
+}
+
 .form-floating {
     color: $white;
     font-weight: bold;
@@ -56,9 +61,5 @@
     color: $purpleBackground;
     font-size: 1.1rem;
     font-weight: bold;
-}
-
-.form {
-    width: 100%;
-    max-width: 60rem;
+    margin-left: 70%;
 }
