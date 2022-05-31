@@ -4,7 +4,7 @@
     background-image: url('../img/banniere.jpg');
     background-position: center;
     background-size: cover;
-    height: 30vw;
+    height: 20vw;
     max-height: 50rem;
     z-index: -50;
     position: relative;
@@ -15,15 +15,32 @@
     font-size: 1.7vmin;
     font-weight: bold;
     position: absolute;
-    top: 13%;
+    top: 10%;
     left: 51%;
-    transform: translate(-51%, -13%);
+    transform: translate(-51%, -10%);
 }
 
 /*  ============= CARTE ================ */
 
 .card {
     background-color: $purpleCard;
+    width: 30rem;
+    &-img-top {
+        height: 30rem;
+    }
+    &-title {
+        font-size: 3rem;
+        color: $white;
+    }
+    &-text {
+        font-size: 1.1rem;
+        color: darken($white, 30%);
+        text-align: justify;
+    }
+    .btn {
+        float: right;
+        margin: -1rem 0.5rem 0.5rem 0.5rem;
+    }
 }
 
 /* ============== FORMULAIRE ==================== */
@@ -31,33 +48,30 @@
 .form {
     width: 100%;
     max-width: 60rem;
+    &-floating {
+        color: $white;
+        font-weight: bold;
+        font-size: 1.5vmin;
+    }
+    &-control {
+        background-color: $purpleCard;
+        border: none;
+    }
+    &-control:focus {
+        background-color: lighten($purpleCard, 20%);
+        box-shadow: none;
+        border: 1px solid darken($white, 50%);
+    }
 }
 
-.form-floating {
-    color: $white;
-    font-weight: bold;
-    font-size: 1.5vmin;
-}
-
-.form-control {
-    background-color: $purpleCard;
-    border: none;
-}
-
-.form-control:focus {
-    background-color: lighten($purpleCard, 20%);
-    box-shadow: none;
-    border: 1px solid darken($white, 50%);
-}
-
-.form-floating > .form-control:not(:placeholder-shown) {
+.form .form-floating > .form-control:not(:placeholder-shown) {
     color: $white;
     font-weight: bold;
     font-size: 1.5vmin;
 }
 
 .btnPublish {
-    background-color: $white;
+    background-color: $purpleText;
     color: $purpleBackground;
     font-size: 1.1rem;
     font-weight: bold;
