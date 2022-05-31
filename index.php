@@ -30,6 +30,19 @@ include_once './view/header.html'
       </div>
     </article>
 
+    <article class="m-3 rounded">
+      <div class="card">
+        <img src="https://m.media-amazon.com/images/I/8129a7-9A7L._AC_SL1500_.jpg" class="card-img-top" alt="affiche film avatar">
+        <div class="card-body">
+          <h5 class="card-title">Titanic</h5>
+          <h6 class="card-subtitle mb-2">Drame</h6>
+          <p class="card-text">En 1997, l'épave du Titanic est l'objet d'une exploration fiévreuse, menée par des chercheurs de trésor en quête d'un diamant bleu qui se trouvait à bord. Frappée par un reportage télévisé, l'une des rescapées du naufrage, âgée de 102 ans, Rose DeWitt, se rend sur place et évoque ses souvenirs. 1912. Fiancée à un industriel arrogant, Rose croise sur le bateau un artiste sans le sou.</p>
+          <a href="#" class="btn btn-danger"><i class="fa-solid fa-trash" data-bs-toggle="tooltip" data-bs-placement="top" title="supprimer"></i></a>
+          <a href="#" class="btn btn-warning"><i class="fa-solid fa-pen-to-square" data-bs-toggle="tooltip" data-bs-placement="top" title="éditer">
+            </i></a>
+        </div>
+      </div>
+    </article>
 
 
 
