@@ -65,12 +65,11 @@
         box-shadow: none;
         border: 1px solid darken($white, 50%);
     }
-}
-
-.form .form-floating > .form-control:not(:placeholder-shown) {
-    color: $white;
-    font-weight: bold;
-    font-size: 1.5vmin;
+    .form-floating > .form-control:not(:placeholder-shown) {
+        color: $white;
+        font-weight: bold;
+        font-size: 1.5vmin;
+    }
 }
 
 .btnPublish {

@@ -10,7 +10,7 @@ include_once './header.html'
 
   <!-- ========================= FORMULAIRE PUBLIER FILM ============================ -->
 
-  <form action="#" method="GET" class="form">
+  <form action="#" method="POST" class="form">
 
     <div class="form-floating m-5">
       <input type="text" name="title" class="form-control" id="title" placeholder="titre du film" autocomplete="off">
@@ -29,7 +29,7 @@ include_once './header.html'
       <label for="floatingInput" class="label_placeholder">Entrez la date de sortie du film</label>
     </div>
     <div class="form-floating m-5">
-      <select name="category" class="form-control select" id="category" placeholder="catégorie du film" autocomplete="off">
+      <select name="category" class="form-control" id="category" placeholder="catégorie du film" autocomplete="off">
         <option value="" selected></option>
         <option value="1">Horreur</option>
         <option value="2">Comédie</option>
