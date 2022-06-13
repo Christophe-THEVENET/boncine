@@ -16,7 +16,7 @@ include_once './view/header.html'
 
   <section class="d-flex justify-content-center align-items-center w-100 mt-5 flex-wrap">
 
-    <article class="m-3 rounded">
+    <article class="m-3">
       <div class="card">
         <img src="https://www.telerama.fr/sites/tr_master/files/ea70fd04-d87a-40ef-8fad-ba3cce3d94ea_2.jpg" class="card-img-top" alt="affiche film avatar">
         <div class="card-body">
@@ -30,7 +30,7 @@ include_once './view/header.html'
       </div>
     </article>
 
-    <article class="m-3 rounded">
+    <article class="m-3">
       <div class="card">
         <img src="https://m.media-amazon.com/images/I/8129a7-9A7L._AC_SL1500_.jpg" class="card-img-top" alt="affiche film avatar">
         <div class="card-body">

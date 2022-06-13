@@ -64,7 +64,6 @@
   box-shadow: none;
   border: 1px solid gray;
 }
-
 .form .form-floating > .form-control:not(:placeholder-shown) {
   color: #ffffff;
   font-weight: bold;
@@ -131,6 +130,7 @@ h1 {
   text-decoration: underline 0.15em rgb(201, 173, 167);
 }
 
+/* ============== PAGE PUBLIER UN FILM============= */
 /* ....... titre publier ......... */
 .publishTitle {
   margin: 10rem auto 5rem;
