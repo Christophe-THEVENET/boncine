@@ -3,7 +3,8 @@
 class Movie
 {
     // attributs    !!!!! on nomme la variable comme dans la BDD (snake_case)
-    // pour ajouter automatiquement les getteurs et setteurs clic droit sur la propriété
+    // pour ajouter automatiquement les getteurs et setteurs clic droit sur la propriété (plugin vscode)
+
     private int $id;
     private string $title;
     private string $description;
@@ -11,19 +12,30 @@ class Movie
     private string $release_date;
     private string $image_url;
     private int $category_id;
+    
+    /*  =============== HYDRATATION CONSTRUCTEUR ============= */
+    // le constructeur appelle la méthode d'hydratation déclarée après.
+    // La méthode d'hydratation boucle sur le tableau de données est crée les setteurs de chaque paramètre et affecte sa valeur.
 
     // constructeur   
     public function __construct(array $data)
     {
         $this->hydrate($data);
     }
-
-
-
+ 
     // méthodes
 
     public function hydrate(array $data)
     {
+        foreach ($data as $key => $value) {
+            // on récupère le nom du setter correspondant à l'attrtinut
+            $method = 'set' . ucfirst($key); // setId, setTitle, ...
+            // Si le setter correspondant existe.
+            if (method_exists($this, $method)) {
+                // On appelle le setter
+                $this->$method($value); // instance->setId(1), instance->setTitle('Avatar'), .....
+            }
+        }
     }
 
 
@@ -32,14 +44,14 @@ class Movie
 
     public function getId(): int
     {
-        return $this->id; // ds les setteurs on renvois systématiquement l'objet
+        return $this->id;
     }
     public function setId(int $id): self
     {
         if ($id > 0) {
             $this->id = $id;
         }
-        return $this;
+        return $this; // ds les setteurs on renvois systématiquement l'objet
     }
     /* -------------title------------------- */
 

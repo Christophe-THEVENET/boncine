@@ -7,22 +7,3 @@
 // npm init
 /* "sass": "sass --watch ./styles/:./styles/" */
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    /* border: 1px solid red;  */
-}
-
-html {
-    font-size: 62.5%;
-}
-
-body {
-    background-color: $purpleBackground;
-    color: $purpleText;
-    font-family: 'Poppins', sans-serif;
-    text-align: center;
-    min-height: 100vh;
-}
-

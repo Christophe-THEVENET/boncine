@@ -1,55 +1,22 @@
-/*============== HEADER =================*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* border: 1px solid red;  */
+}
 
-header {
+html {
+    font-size: 62.5%;
+}
+
+body {
     background-color: $purpleBackground;
-    min-height: 10vh;
-    display: flex;
-    align-items: center;
-    z-index: 10;
-    box-shadow: 4px 4px 7px 1px black;
-}
-
-.header__title {
-    flex: 1;
-    color: $white;
-}
-
-h1 {
-    font-size: 4.5vmin;
-    margin-left: 2rem;
-    padding: 0.8rem;
-}
-
-/*  ======= personalise le btn hambuger ========= */
-.custom-toggler .navbar-toggler-icon {
-    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgb(201, 173, 167)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
-}
-
-.navbar-toggler-icon {
-    width: 3rem;
-}
-
-.custom-toggler.navbar-toggler:focus {
-    box-shadow: none;
-}
-
-.header__nav {
-    flex: 10;
-    margin-right: 3rem;
-}
-
-.navbar-nav .nav-item .nav-link {
     color: $purpleText;
-    font-size: 1.6rem;
-    text-decoration: underline 0.15em rgba(201, 173, 167, 0);
-    text-underline-offset: 0.5em;
-    margin-right: 1rem;
-    transition: text-decoration-color 500ms;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    min-height: 100vh;
 }
 
-.navbar-nav .nav-item .nav-link:hover {
-    text-decoration: underline 0.15em rgba(201, 173, 167, 1);
-}
 
 /* ============== PAGE PUBLIER UN FILM============= */
 
