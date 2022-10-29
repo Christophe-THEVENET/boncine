@@ -113,9 +113,7 @@ class Movie
     }
     public function setCategory_id(int $category_id): self
     {
-        if ($category_id > 0) {
             $this->category_id = $category_id;
-        }
         return $this;
     }
 }

@@ -5,16 +5,18 @@ require_once __DIR__ . '/../function.php';
 
 
 if ($_POST) {
+ 
   $moviesController = new MoviesController();
   $data = $_POST;
   $movie = new Movie($data);
 
+  $moviesController->createMovie($movie);
 
-  $manager->createMovie($movie);
+ 
 
   echo "
   <script>
-    window.location.href = '../../../index.php'
+    window.location.href = '/../index.php'
   </script>";
 }
 
