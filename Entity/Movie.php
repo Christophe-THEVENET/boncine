@@ -2,7 +2,8 @@
 
 class Movie
 {
-    // attributs    !!!!! on nomme la variable comme dans la BDD (snake_case)
+    // attributs ___________________________________  
+    //  !!!!! on nomme la variable comme dans la BDD (snake_case)
     // pour ajouter automatiquement les getteurs et setteurs clic droit sur la propriété (plugin vscode)
 
     private int $id;
@@ -12,7 +13,7 @@ class Movie
     private string $release_date;
     private string $image_url;
     private int $category_id;
-    
+
     /*  =============== HYDRATATION CONSTRUCTEUR ============= */
     // le constructeur appelle la méthode d'hydratation déclarée après.
     // La méthode d'hydratation boucle sur le tableau de données est crée les setteurs de chaque paramètre et affecte sa valeur.
@@ -22,8 +23,8 @@ class Movie
     {
         $this->hydrate($data);
     }
- 
-    // méthodes
+
+    // méthodes _____________________________________
 
     public function hydrate(array $data)
     {
@@ -61,9 +62,7 @@ class Movie
     }
     public function setTitle(string $title): self
     {
-        if (strlen($title) >= 3 && strlen($title <= 180)) { // entre 3 et 180 caracteres
-            $this->title = $title;
-        }
+        $this->title = $title;
         return $this;
     }
     /* -------------description------------------- */
@@ -73,9 +72,7 @@ class Movie
     }
     public function setDescription(string $description): self
     {
-        if (strlen($description) >= 10 && strlen($description <= 2000)) { // entre 3 et 2000 caracteres
             $this->description = $description;
-        }
         return $this;
     }
     /* -------------director------------------- */
@@ -85,9 +82,7 @@ class Movie
     }
     public function setDirector(string $director): self
     {
-        if (strlen($director) >= 3 && strlen($director <= 120)) { // entre 3 et 120 caracteres
             $this->director = $director;
-        }
         return $this;
     }
     /* -------------release_date------------------- */

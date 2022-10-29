@@ -29,6 +29,10 @@ include_once './header.html'
       <label for="floatingInput" class="label_placeholder">Entrez la date de sortie du film</label>
     </div>
     <div class="form-floating m-5">
+      <input type="text" name="director" class="form-control" id="director" placeholder="réalisateur" autocomplete="off">
+      <label for="floatingInput" class="label_placeholder ">Entrez le réalisateur du film</label>
+    </div>
+    <div class="form-floating m-5">
       <select name="category" class="form-control" id="category" placeholder="catégorie du film" autocomplete="off">
         <option value="" selected></option>
         <option value="1">Horreur</option>
