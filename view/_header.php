@@ -30,12 +30,10 @@
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav">
             <li class="nav-item">
-              <a class="nav-link" href="index.php">Accueil</a>
+              <a class="nav-link" href="/studi/exo_php/lives/Chris_CHEVALIER/allocine.com/index.php">Accueil</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="./View/create.php">Publier
-                un
-                film</a>
+              <a class="nav-link" href="/studi/exo_php/lives/Chris_CHEVALIER/allocine.com/View/createMovie.php">Ajouter un film</a>
             </li>
           </ul>
         </div>

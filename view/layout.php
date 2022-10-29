@@ -6,8 +6,6 @@
   include_once __DIR__ . '/_header.php'; ?>
 
 
-<!-- =============== TITLE ============== -->
-  <h2 class="text-center my-5"><?= $title ?></h2>
 
 
   <?php
@@ -20,7 +18,9 @@
 
   <!-- =============== CONTENU ============== -->
   <main class="container d-flex flex-wrap justify-content-center ">
-    <section class="d-flex justify-content-center align-items-center w-100 mt-5 flex-wrap">
+  <h3 class="mt-5"><?= $title ?></h3>
+    <section class="d-flex justify-content-center align-items-center w-100 mt-4 flex-wrap">
+     
 
       <!--   on travaille avec une variable pour insérer le bon contenu-->
       <?= $content ?>
