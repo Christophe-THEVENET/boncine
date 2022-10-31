@@ -1,5 +1,7 @@
 <?php
 
+
+
 require_once __DIR__ . '/../function.php';
 
 
@@ -12,6 +14,7 @@ if ($_POST) {
 
   $moviesController->createMovie($movie);
 
+  
  
 
   echo "
@@ -30,19 +33,15 @@ $title = 'Ajouter un film';
 ob_start();
 
 
+
+
 // mes en mémoire ds 1 variable tout ce qu il y a a la suite jusqu a ob_get_clean().
 
 require_once __DIR__. '/_createMovieForm.php';
 
 
-/* var_dump($articles); */
+
 
 $content = ob_get_clean();
 
 require_once __DIR__ . '/layout.php';
-
-
-
-
-
-

@@ -1,5 +1,9 @@
 <!-- ========================= FORMULAIRE MOFIDER UN FILM ============================ -->
-
+<?php
+// recup toutes les categories pour le choix ds select 
+$catController = new CategoryController();
+$allCat = $catController->getAllCategorys();
+?>
 
 
 <form method="POST" class="form">
@@ -27,10 +31,9 @@
   <div class="form-floating m-5">
     <select name="category_id" class="form-control" id="category" placeholder="catégorie du film" autocomplete="off">
       <option value="" selected><?= $category->getCategory()?></option>
-      <option value="1">Horreur</option>
-      <option value="2">Comédie</option>
-      <option value="3">Aventure</option>
-      <option value="4">Drame</option>
+      <?php foreach ($allCat as $cat) : ?>
+        <option value="<?= $cat->getId() ?>"><?= $cat->getCategory() ?></option>
+      <?php endforeach ?>
     </select>
     <label for="floatingInput" class="label_placeholder">catégorie du film <i class="fa-solid fa-arrow-up-right-from-square"></i>  <i class="bi bi-box-arrow-down-right"></i> </label>
   </div>

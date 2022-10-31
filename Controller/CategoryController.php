@@ -10,7 +10,7 @@ class CategoryController {
 
  // ------------------------- RECUPERER 1 CATEGORY PAR ID ------------------------------
 
- public function getCategoryById(int $id)
+ public function getCategoryById(int $id):Category
  {
    $req = $this->pdo->prepare("SELECT * FROM category WHERE  id = :id");
    $req->bindParam(":id", $id, PDO::PARAM_INT);
@@ -29,7 +29,6 @@ class CategoryController {
     while ($data = $stm->fetch(PDO::FETCH_ASSOC)) {
       $categorys[] = new Category($data);
     }
-    require_once __DIR__ . '/../index.php';
     return $categorys;
   }
 

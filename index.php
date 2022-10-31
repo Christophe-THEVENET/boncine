@@ -2,13 +2,13 @@
 
 require_once __DIR__ . '/function.php';
 
-
+// recup tous les films
 $movieController = new MoviesController();
 $movies = $movieController->getAllMovies();
-// recup tous les films
+
+// recup toutes les categories
 $categoryController = new CategoryController();
-
-
+$categorys = $categoryController->getAllCategorys();
 
 
 // ********* TEMPLATE LISTE DES FILMS **************
