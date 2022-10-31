@@ -7,7 +7,7 @@
       <h5 class="card-title"><?= $movie->getTitle() ?></h5>
       <div class="d-flex justify-content-center align-items-baseline">
         <h6 class="card-director mb-2"><?= $movie->getDirector() ?></h6>
-        <h6 class="card-subtitle mb-2">Science-Fiction</h6>
+        <h6 class="card-subtitle mb-2"><?= $category->getCategory() ?></h6>
       </div>
       <h6 class="card-date mb-2"><?= formatDateInFrench($movie->getRelease_date()) ?></h6>
       <p class="card-text"><?= $movie->getDescription() ?></p>

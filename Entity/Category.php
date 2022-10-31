@@ -4,8 +4,8 @@ class Category
 {
 
     private int $id;
-    private string $name;
-    private int $color;
+    private string $category;
+    private string $color;
 
     /*  =============== HYDRATATION CONSTRUCTEUR ============= */
 
@@ -43,14 +43,14 @@ class Category
         return $this;
     }
 
-    public function getName()
+    public function getCategory()
     {
-        return $this->name;
+        return $this->category;
     }
 
-    public function setName($name)
+    public function setCategory($category)
     {
-        $this->name = $name;
+        $this->category = $category;
 
         return $this;
     }

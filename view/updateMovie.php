@@ -5,6 +5,9 @@ require_once __DIR__ . '/../function.php';
 $moviesController = new MoviesController();
 $movie = $moviesController->getMovieById($_GET['id']);
 
+$categoryController = new CategoryController();
+$category = $categoryController->getCategoryById($movie->getCategory_id());
+
 
 if ($_POST) {
   $movie->hydrate($_POST);
@@ -13,7 +16,7 @@ if ($_POST) {
 
   echo "
   <script>
-    window.location.href = '/../index.php'
+    window.location.href = './../index.php'
   </script>";
 }
 

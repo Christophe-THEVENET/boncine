@@ -69,7 +69,7 @@ class MoviesController
 
   public function updateMovie(Movie $movie)
   {
-    $req = $this->pdo->prepare("UPDATE  movie SET title = :title, `description` = :`description`, director = :director, release_date = :release_date, image_url = :image_url, category_id = :category_id) WHERE id = :id");
+    $req = $this->pdo->prepare("UPDATE  movie SET title = :title, description = :description, director = :director, release_date = :release_date, image_url = :image_url, category_id = :category_id WHERE id = :id");
     $req->bindValue(":title", $movie->getTitle(), PDO::PARAM_STR);
     $req->bindValue(":description", $movie->getDescription(), PDO::PARAM_STR);
     $req->bindValue(":director", $movie->getDirector(), PDO::PARAM_STR);

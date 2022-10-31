@@ -26,7 +26,7 @@
   </div>
   <div class="form-floating m-5">
     <select name="category_id" class="form-control" id="category" placeholder="catégorie du film" autocomplete="off">
-      <option value="" selected></option>
+      <option value="" selected><?= $category->getCategory()?></option>
       <option value="1">Horreur</option>
       <option value="2">Comédie</option>
       <option value="3">Aventure</option>

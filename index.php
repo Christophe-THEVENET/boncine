@@ -5,6 +5,9 @@ require_once __DIR__ . '/function.php';
 
 $movieController = new MoviesController();
 $movies = $movieController->getAllMovies();
+// recup tous les films
+$categoryController = new CategoryController();
+
 
 
 
@@ -19,6 +22,8 @@ ob_start();
 
 // ********* TOUS LES ARTICLES **************
 foreach ($movies as $movie) {
+  //recup la category du film
+  $category = $categoryController->getCategoryById($movie->getCategory_id());
   include __DIR__ . '/View/_card.php';
 }
 
@@ -26,3 +31,4 @@ $content = ob_get_clean();
 
 
 require_once __DIR__ . '/View/layout.php';
+
