@@ -17,7 +17,7 @@ if ($_POST) {
   </script>";
 }
 
-$title = 'Modifier le film';
+$title = "Modifier {$movie->getTitle()}  ";
 
 
 // ********* TEMPLATE CREATION D'UN ARTICLE **************
@@ -37,3 +37,4 @@ require_once __DIR__ . '/_updateMovieForm.php';
 $content = ob_get_clean();
 
 require_once __DIR__ . '/layout.php';
+

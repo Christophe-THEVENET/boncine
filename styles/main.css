@@ -131,6 +131,18 @@ h1 {
   font-weight: bold;
   font-size: 1.5vmin;
 }
+.form .form-floating > .form-control:focus {
+  color: #ffffff;
+  font-weight: bold;
+  padding-top: 1rem;
+  padding-bottom: 0.5rem;
+}
+.form .form-floating > label {
+  top: -8px;
+}
+.form .form-floating > label > i {
+  padding-left: 10px;
+}
 
 .btnPublish {
   background-color: rgb(201, 173, 167);
@@ -140,8 +152,9 @@ h1 {
   margin-left: 70%;
 }
 
-.up-movie {
-  color: aliceblue;
+.form-floating > .form-control-plaintext ~ label, .form-floating > .form-control:focus ~ label, .form-floating > .form-control:not(:placeholder-shown) ~ label, .form-floating > .form-select ~ label {
+  font-weight: bold;
+  color: rgb(255, 255, 255);
 }
 
 * {

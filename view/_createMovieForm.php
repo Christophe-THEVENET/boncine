@@ -1,3 +1,4 @@
+
 <!-- ========================= FORMULAIRE PUBLIER FILM ============================ -->
 
 <form  method="POST" class="form">
@@ -16,7 +17,7 @@
 </div>
 <div class="form-floating m-5">
   <input type="date" name="release_date" class="form-control" id="releaseDate" placeholder="date du film" autocomplete="off">
-  <label for="floatingInput" class="label_placeholder">Entrez la date de sortie du film</label>
+  <label for="floatingInput" class="label_placeholder label_date">Entrez la date de sortie du film</label>
 </div>
 <div class="form-floating m-5">
   <input type="text" name="director" class="form-control" id="director" placeholder="réalisateur" autocomplete="off">
@@ -30,8 +31,8 @@
     <option value="3">Aventure</option>
     <option value="4">Drame</option>
   </select>
-  <label for="floatingInput" class="label_placeholder"> Séléctionnez la catégorie du film </label>
+  <label for="floatingInput" class="label_placeholder">  Séléctionnez la catégorie du film  <i class="fa-solid fa-arrow-up-right-from-square"></i>  </label>
 </div>
-<input type="submit" value="Publier" class="btn btnPublish">
+<input type="submit" value="Ajouter" class="btn btnPublish">
 
 </form>

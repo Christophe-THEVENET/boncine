@@ -27,7 +27,8 @@ function formatDateInFrench($date)
     // converti la date en timestamp
     $dateTimestamp = strtotime($date);
     // pour avoir les dates en français avec l objet Intl
-    $formatter = new IntlDateFormatter('fr_FR', IntlDateFormatter::FULL, IntlDateFormatter::SHORT);
+    $formatter = new IntlDateFormatter('fr_FR', IntlDateFormatter::MEDIUM, IntlDateFormatter::NONE);
+    //                                                     DATE                   HEURE
     return $formatter->format($dateTimestamp);
 }
 

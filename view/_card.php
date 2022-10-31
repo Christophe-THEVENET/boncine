@@ -9,7 +9,7 @@
         <h6 class="card-director mb-2"><?= $movie->getDirector() ?></h6>
         <h6 class="card-subtitle mb-2">Science-Fiction</h6>
       </div>
-      <h6 class="card-date mb-2"><?= $movie->getRelease_date() ?></h6>
+      <h6 class="card-date mb-2"><?= formatDateInFrench($movie->getRelease_date()) ?></h6>
       <p class="card-text"><?= $movie->getDescription() ?></p>
       <a href="/studi/exo_php/lives/Chris_CHEVALIER/allocine.com/View/deleteMovie.php?id=<?= $movie->getId() ?>" class="btn btn-danger"><i class="fa-solid fa-trash" data-bs-toggle="tooltip" data-bs-placement="top" title="supprimer"></i></a>
       <a href="/studi/exo_php/lives/Chris_CHEVALIER/allocine.com/View/updateMovie.php?id=<?= $movie->getId() ?>" class="btn btn-warning"><i class="fa-solid fa-pen-to-square" data-bs-toggle="tooltip" data-bs-placement="top" title="éditer">

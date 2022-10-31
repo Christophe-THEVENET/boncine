@@ -1,10 +1,8 @@
   <?php
 
 
-
   /* ============== HEADER ============== */
   include_once __DIR__ . '/_header.php'; ?>
-
 
 
 
@@ -32,5 +30,5 @@
   <?php
 
 
-  /* ============== HEADER ============== */
+  /* ============== FOOTER ============== */
   include_once __DIR__ . '/_footer.php';
