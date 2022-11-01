@@ -1,22 +1,19 @@
 /*============== HEADER =================*/
 
 * {
- /*  border: 1px solid red; */
+  /*  border: 1px solid red; */
   box-sizing: border-box;
 }
 
 header {
   background-color: $purpleBackground;
-
-/*   z-index: 10; */
   box-shadow: 4px 4px 7px 1px black;
-  
 }
 
 .header__title {
   color: $white;
   margin-right: 4rem;
-  font-size: 2.5rem;
+  font-size: 2vmax;
 }
 
 h1 {
@@ -30,21 +27,17 @@ h1 {
 }
 
 /*  ======= personalise le btn hambuger ========= */
- .custom-toggler .navbar-toggler-icon {
+.custom-toggler .navbar-toggler-icon {
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(201, 173, 167, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
-}  
+}
 
 .navbar-toggler-icon {
   width: 3rem;
 }
 
 .navbar-toggler {
-background-color: rgba(201, 173, 167, 0.5);
-
-
-
+  background-color: rgba(201, 173, 167, 0.5);
 }
-
 
 .custom-toggler.navbar-toggler:focus {
   box-shadow: none;

@@ -16,37 +16,12 @@
 
 <body>
 
-  <!-- 
-  <nav class="navbar navbar-expand-lg flex-row-reverse">
-    <button class="navbar-toggler custom-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="custom-toggler navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav">
-        <li class="nav-item">
-          <a class="nav-link" href="/studi/exo_php/lives/Chris_CHEVALIER/allocine.com/index.php">Accueil</a>
-        </li>
-        <li class="nav-item ml-auto">
-          <a class="nav-link" href="/studi/exo_php/lives/Chris_CHEVALIER/allocine.com/View/createMovie.php">Ajouter un film</a>
-        </li>
-      </ul>
-      <ul class="navbar-nav ">
-        <li class="nav-item">
-          <a class="nav-link" href="/studi/exo_php/lives/Chris_CHEVALIER/allocine.com/index.php">Se connecter</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="/studi/exo_php/lives/Chris_CHEVALIER/allocine.com/View/createMovie.php">S'inscrire</a>
-        </li>
-      </ul>
-    </div>
-  </nav>
--->
-    <!--  ========================= HEADER ============================= -->
+  <!--  ========================= HEADER ============================= -->
 
   <header>
     <nav class="navbar navbar-expand-lg navbar-light">
       <div class="container-fluid">
-        <a class="navbar-brand header__title" href="#">BonCiné.com</a>
+        <p class="header__title">BonCiné.com</p>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -59,18 +34,26 @@
             <li class="nav-item">
               <a class="nav-link" href="/studi/exo_php/lives/Chris_CHEVALIER/allocine.com/View/createMovie.php">Ajouter un film</a>
             </li>
-
           </ul>
           <ul class="navbar-nav mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link" href="/studi/exo_php/lives/Chris_CHEVALIER/allocine.com/View/login.php">Se connecter</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="/studi/exo_php/lives/Chris_CHEVALIER/allocine.com/View/register.php">S'inscrire</a>
-            </li>
+  <!--  affichage conditioné à la connexion -->
+            <?php if (isset($_SESSION['username']) && $_SESSION['username'] !== null) : ?>
+              <li class="nav-item">
+                <a class="nav-link" href="/studi/exo_php/lives/Chris_CHEVALIER/allocine.com/View/User/loginUser.php">Bienvenu <?= $_SESSION['username']  ?> </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/studi/exo_php/lives/Chris_CHEVALIER/allocine.com/View/User/logoutUser.php">Se déconnecter </a>
+              </li>
+            <?php else : ?>
+              <li class="nav-item">
+                <a class="nav-link" href="/studi/exo_php/lives/Chris_CHEVALIER/allocine.com/View/User/loginUser.php">Se connecter</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/studi/exo_php/lives/Chris_CHEVALIER/allocine.com/View/User/createUser.php">S'inscrire</a>
+              </li>
+            <?php endif; ?>
           </ul>
         </div>
       </div>
     </nav>
   </header>
-
