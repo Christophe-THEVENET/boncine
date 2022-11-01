@@ -1,17 +1,20 @@
 @import url("https://fonts.googleapis.com/css2?family=Balsamiq+Sans&family=Rammetto+One&family=Skranji&display=swap");
 /*============== HEADER =================*/
+* {
+  /*  border: 1px solid red; */
+  box-sizing: border-box;
+}
+
 header {
   background-color: #111016;
-  min-height: 10vh;
-  display: flex;
-  align-items: center;
-  z-index: 10;
+  /*   z-index: 10; */
   box-shadow: 4px 4px 7px 1px black;
 }
 
 .header__title {
-  flex: 1;
   color: #ffffff;
+  margin-right: 4rem;
+  font-size: 2.5rem;
 }
 
 h1 {
@@ -20,22 +23,25 @@ h1 {
   padding: 0.8rem;
 }
 
+.navbar-collapse {
+  right: 0;
+}
+
 /*  ======= personalise le btn hambuger ========= */
 .custom-toggler .navbar-toggler-icon {
-  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgb(201, 173, 167)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(201, 173, 167, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
 }
 
 .navbar-toggler-icon {
   width: 3rem;
 }
 
-.custom-toggler.navbar-toggler:focus {
-  box-shadow: none;
+.navbar-toggler {
+  background-color: rgba(201, 173, 167, 0.5);
 }
 
-.header__nav {
-  flex: 10;
-  margin-right: 3rem;
+.custom-toggler.navbar-toggler:focus {
+  box-shadow: none;
 }
 
 .navbar-nav .nav-item .nav-link {
@@ -152,7 +158,10 @@ h1 {
   margin-left: 70%;
 }
 
-.form-floating > .form-control-plaintext ~ label, .form-floating > .form-control:focus ~ label, .form-floating > .form-control:not(:placeholder-shown) ~ label, .form-floating > .form-select ~ label {
+.form-floating > .form-control-plaintext ~ label,
+.form-floating > .form-control:focus ~ label,
+.form-floating > .form-control:not(:placeholder-shown) ~ label,
+.form-floating > .form-select ~ label {
   font-weight: bold;
   color: rgb(255, 255, 255);
 }
