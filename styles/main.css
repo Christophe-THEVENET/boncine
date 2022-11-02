@@ -1,4 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Balsamiq+Sans&family=Rammetto+One&family=Skranji&display=swap");
+.active {
+  font-weight: bold;
+}
+
 /*============== HEADER =================*/
 * {
   /*  border: 1px solid red; */

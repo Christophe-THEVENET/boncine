@@ -32,3 +32,14 @@ function formatDateInFrench($date)
     return $formatter->format($dateTimestamp);
 }
 
+
+
+
+// ************ a joute class 'activ' si url de la page = url du lien ***********
+function isCurrentUrl(string $url): ?string
+{
+    if ($_SERVER['REQUEST_URI'] === $url) { //$_SERVER['REQUEST_URI'] est l 'url de la page en cours
+        return 'active';
+    }
+    return null;
+}

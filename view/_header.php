@@ -28,15 +28,16 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <!--     c est le me-auto qui pousse a droite   -->
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
+            <!--  isCurrentUrl pour ajouter la classe active sur le lien en cours -->
+            <li class="nav-item <?= isCurrentUrl('/studi/exo_php/lives/Chris_CHEVALIER/allocine.com/index.php'); ?>">
               <a class="nav-link" href="/studi/exo_php/lives/Chris_CHEVALIER/allocine.com/index.php">Accueil</a>
             </li>
-            <li class="nav-item">
+            <li class="nav-item   <?= isCurrentUrl('/studi/exo_php/lives/Chris_CHEVALIER/allocine.com/View/createMovie.php'); ?>">
               <a class="nav-link" href="/studi/exo_php/lives/Chris_CHEVALIER/allocine.com/View/createMovie.php">Ajouter un film</a>
             </li>
           </ul>
           <ul class="navbar-nav mb-2 mb-lg-0">
-  <!--  affichage conditioné à la connexion -->
+            <!--  affichage conditioné à la connexion -->
             <?php if (isset($_SESSION['username']) && $_SESSION['username'] !== null) : ?>
               <li class="nav-item">
                 <a class="nav-link" href="/studi/exo_php/lives/Chris_CHEVALIER/allocine.com/View/User/loginUser.php">Bienvenu <?= $_SESSION['username']  ?> </a>
