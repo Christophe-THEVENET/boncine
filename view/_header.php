@@ -8,9 +8,9 @@
   <!-- font awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <!-- bootstrap CSS only -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
   <!-- !!!!!!!!! pour pointer la feuille de style sur plusieurs fichiers php bien partir de localhost -->
-  <link rel="stylesheet" href="/studi/exo_php/lives/Chris_CHEVALIER/allocine.com/styles/main.css">
+  <link rel="stylesheet" href="/styles/main.css">
   <title>Bon Ciné</title>
 </head>
 
@@ -29,6 +29,7 @@
           <!--     c est le me-auto qui pousse a droite   -->
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <!--  isCurrentUrl pour ajouter la classe active sur le lien en cours -->
+
             <li class="nav-item <?= isCurrentUrl('/studi/exo_php/lives/Chris_CHEVALIER/allocine.com/index.php'); ?>">
               <a class="nav-link" href="/studi/exo_php/lives/Chris_CHEVALIER/allocine.com/index.php">Accueil</a>
             </li>

@@ -23,6 +23,8 @@ ob_start();
 // mes en mémoire ds 1 variable tout ce qu il y a a la suite jusqu a ob_get_clean().
 
 // ********* TOUS LES ARTICLES **************
+
+
 foreach ($movies as $movie) {
   //recup la category du film
   $category = $categoryController->getCategoryById($movie->getCategory_id());
